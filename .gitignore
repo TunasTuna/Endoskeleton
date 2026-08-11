@@ -1,0 +1,23 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# CAD backups/autosave
+*.bak
+*~
+*.autosave
+*.f3d.bak
+
+# Fusion 360 exports (large binaries — consider git-lfs if you need these versioned)
+# *.f3d
+# *.step
+# *.stl
+
+# Arduino / PlatformIO
+.pio/
+*.hex
+*.elf
+
+# Editor
+.vscode/
+.idea/
