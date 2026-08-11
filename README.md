@@ -56,4 +56,9 @@ Set up the repo and worked through the early design decisions. Started with a sl
 
 ## License
 
-Not decided yet. Leaning toward MIT for the firmware/code, and something like CC-BY-NC for the design files if I want to allow remixing without commercial use.
+This project is open source, under two licenses depending on the content:
+
+- Firmware and code (`/firmware`) — [MIT](firmware/LICENSE)
+- Everything else — design files, docs, images (`/cad`, `/docs`, `/electronics`) — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), meaning anyone can use or build on it, commercially or not, as long as they credit this project.
+
+See [LICENSE](LICENSE) for details.
