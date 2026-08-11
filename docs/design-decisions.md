@@ -33,10 +33,32 @@ Simple, reliable, easy to tune. A double-hinge (rear pivot point) is
 more anatomically accurate and could be a later refinement if the
 single-pivot motion looks too flat.
 
+## Silhouette: boxy/geometric (revised from original sleek/organic)
+
+Initial direction was smooth organic chrome curves. After reviewing
+animatronic-endoskeleton reference blueprints, switched to a boxy,
+geometric skull frame — square housings, flat panels, angular jaw.
+Reads more mechanical/deliberate, and is also considerably easier to
+model in CAD and 3D print than compound organic curves.
+
+## Eyes: round ball-and-housing
+
+Mechanical eyeball (sphere) set inside a square housing, visible
+pupil/bearing detail. Chosen over glowing hollow horror-sockets and
+flat boxy camera-lens eyes — keeps some expressiveness (round eye)
+while staying consistent with the boxy frame (square housing).
+
+## Jaw: upper plate + hinged lower jaw with segmented teeth block
+
+Still single-pivot hinge + servo lever + spring return (see above),
+but visual treatment updated to a grid of individual teeth rather
+than a plain strip, matching the boxy/mechanical style.
+
 ## Open questions
 
 - Finish/material — chrome vs matte vs mixed
-- Eye/optics — static, LED, or camera module?
-- Skull plate seam pattern / how much mechanism is visible at gaps
+- Eye optics — is the "ball" lit/LED, or just a static painted/machined sphere?
+- Exact skull box proportions (width/height/depth ratios) and wall thickness
 - Specific servo models + torque requirements (depends on final
   skull weight, which depends on material/print settings)
+- How much panel-seam/exposed-mechanism detail on the boxy shell

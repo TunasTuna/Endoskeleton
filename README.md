@@ -8,9 +8,10 @@ own mechanism layout.
 
 ## Design Direction
 
-- **Style**: sleek / organic chrome — smooth biomechanical curves,
-  not a boxy/industrial look. Plates with visible seams; joints and
-  mechanism exposed at the gaps rather than a fully open lattice.
+- **Style**: boxy / geometric animatronic-endoskeleton look — square
+  skull frame, square eye housings with round ball-and-housing eyes,
+  hinged lower jaw with a segmented teeth block. (Revised from an
+  initial sleek/organic chrome concept — see docs/design-decisions.md.)
 - **End goal**: functional build — motorized neck and jaw, not just
   a static display piece.
 - **Finish**: undecided (polished chrome / brushed matte / mixed —
@@ -63,6 +64,11 @@ electronics/   Wiring diagrams, BOM, actuator/servo specs
 - Locked design direction: sleek/organic chrome, functional build,
   3-DOF neck (yaw/roll/tilt) + jaw servo
 - First concept diagram: joint stack + skull silhouette placement
+- Reviewed animatronic-endoskeleton reference blueprints
+- Pivoted silhouette to boxy/geometric; locked round ball-and-housing
+  eye style; updated jaw to segmented teeth block
+- Synthesized concept diagram combining boxy frame + existing servo
+  layout
 
 ## License
 
