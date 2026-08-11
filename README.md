@@ -1,76 +1,59 @@
-# Chrome Skull Robot — Head & Neck Build
+# Endoskeleton
 
-An original robotic head/neck design in a chrome-skeleton aesthetic —
-exposed servos, articulated jaw, visible neck actuators. Inspired by
-classic chrome-endoskeleton sci-fi robot designs, not a reproduction
-of any specific licensed character. Own proportions, own skull shape,
-own mechanism layout.
+A DIY animatronic head and neck build — an original mechanical design in the boxy, exposed-endoskeleton style you'd see in a maker workshop, not a reproduction of any licensed character. This is a personal project I'm building from scratch, from concept sketches through to a working motorized head.
 
-## Design Direction
+## What this is
 
-- **Style**: boxy / geometric animatronic-endoskeleton look — square
-  skull frame, square eye housings with round ball-and-housing eyes,
-  hinged lower jaw with a segmented teeth block. (Revised from an
-  initial sleek/organic chrome concept — see docs/design-decisions.md.)
-- **End goal**: functional build — motorized neck and jaw, not just
-  a static display piece.
-- **Finish**: undecided (polished chrome / brushed matte / mixed —
-  chrome skull with dark mechanical joints).
+The goal is a functional robotic skull with a fully articulated neck: it can pan, tilt, and roll, and the jaw opens and closes on its own servo. Everything here — proportions, panel layout, mechanism placement — is original, worked out over a series of design passes rather than copied from an existing character or product.
 
-## Mechanical Layout
+## Design direction
 
-4 servos total, base to head:
+The look settled into something boxy and geometric: a square skull frame, square eye housings holding round ball-and-socket eyes, and a hinged lower jaw with a segmented teeth block. This wasn't the starting point — the project began with a smoother, more organic chrome concept, and shifted after working through some animatronic-style reference material. The full reasoning behind that (and other design choices) is written up in [`docs/design-decisions.md`](docs/design-decisions.md).
 
-1. **Yaw servo** (base) — full head pan, left/right
-2. **Roll servo** — side-to-side head tilt ("curious tilt")
-3. **Tilt/pitch servo** — nod up/down, mounted closest to skull
-4. **Jaw servo** (internal, in skull) — lever-arm driven, spring-return close
+Finish is still open — polished chrome, brushed matte, or a mix of the two with darker mechanical joints are all on the table.
 
-Chosen over a simpler 2-servo pan/tilt for more lifelike motion, and
-over a cable-driven segmented "vertebrae" neck to keep build
-complexity manageable for an intermediate Arduino/servo skill level.
-Cable-driven neck is a possible future upgrade path.
+## How it moves
 
-Controller: Arduino-class board (Uno has enough PWM pins for 4
-servos; Nano/ESP32 leave more headroom for growth).
+Four servos, base to head:
 
-## Project Structure
+1. **Yaw** — pans the head left and right
+2. **Roll** — tilts the head side to side
+3. **Tilt** — nods the head up and down
+4. **Jaw** — internal servo with a lever arm and spring return, for the mouth
+
+I went with this 3-axis neck instead of a simpler 2-servo pan/tilt because it moves a lot more naturally, and picked it over a cable-driven segmented neck (which looks even better, but adds a lot of tensioning and calibration headaches) to keep the build realistic for where my skills are right now. The cable-driven version is a tempting upgrade for a future revision.
+
+Planning to run this on an Arduino-class board — an Uno has enough PWM output for four servos, though a Nano or ESP32 would leave more room to grow.
+
+## Repo layout
 
 ```
-cad/           3D model files (Fusion 360 / SolidWorks / Blender / STL exports)
-docs/          Design notes, build log, iteration photos
-docs/references/   Original sketches, mood boards, proportion studies
-firmware/      Microcontroller code (Arduino / ESP32 / etc.)
-electronics/   Wiring diagrams, BOM, actuator/servo specs
+cad/                3D model files (Fusion 360 / SolidWorks / Blender / STL exports)
+docs/               Design notes, build log, reference material
+docs/references/    Sketches, mood boards, and reference images used along the way
+firmware/           Microcontroller code
+electronics/        Wiring diagrams, BOM, servo/actuator specs
 ```
 
-## Goals
+## Progress
 
-- [x] Define overall style direction (sleek biomechanical chrome)
-- [x] Define neck DOF and servo layout (yaw / roll / tilt / jaw)
-- [x] Concept sketch — joint layout + skull silhouette
-- [ ] Face/skull doodle from user, refined into detailed concept art
-- [ ] Finalize material/finish
-- [ ] CAD model — skull shell
-- [ ] CAD model — neck articulation (pan/tilt/roll)
-- [ ] Servo/actuator selection (specific models + torque calcs)
-- [ ] Wiring + control electronics
+- [x] Settle on an overall style direction
+- [x] Define neck degrees of freedom and servo layout
+- [x] First concept sketch — joint layout and skull silhouette
+- [x] Revise silhouette after reviewing animatronic reference designs
+- [ ] Lock final proportions and dimensions
+- [ ] Finalize finish/material
+- [ ] CAD — skull shell
+- [ ] CAD — neck articulation
+- [ ] Pick actual servo models and check torque requirements
+- [ ] Wiring and control electronics
 - [ ] Firmware for basic pose control
 
-## Build Log
+## Build log
 
-### 2026-08-11
-- Initial repo setup
-- Locked design direction: sleek/organic chrome, functional build,
-  3-DOF neck (yaw/roll/tilt) + jaw servo
-- First concept diagram: joint stack + skull silhouette placement
-- Reviewed animatronic-endoskeleton reference blueprints
-- Pivoted silhouette to boxy/geometric; locked round ball-and-housing
-  eye style; updated jaw to segmented teeth block
-- Synthesized concept diagram combining boxy frame + existing servo
-  layout
+**2026-08-11**
+Set up the repo and worked through the early design decisions. Started with a sleek, organic chrome concept and a 3-axis neck plus jaw servo, and sketched out the first joint layout. After looking at some animatronic endoskeleton reference blueprints, pivoted the whole silhouette to something boxier and more geometric, with round ball-and-housing eyes and a segmented teeth block for the jaw. Put together a second concept sketch reflecting the new direction.
 
 ## License
 
-TBD — consider MIT for firmware/code, and CC-BY-NC or similar for
-design files if you want to allow remixing but not commercial use.
+Not decided yet. Leaning toward MIT for the firmware/code, and something like CC-BY-NC for the design files if I want to allow remixing without commercial use.
