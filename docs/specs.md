@@ -79,11 +79,26 @@ MG996R physical dimensions (needed for CAD mounting brackets):
 Two of these (roll + tilt) adds ~110g to the weight estimate above —
 worth folding into the final CAD weight check.
 
-Yaw and jaw servo models still open — yaw just needs a standard/mini
-servo with the ~5-6 kg-cm minimum, jaw can be a lightweight micro
-servo (SG90-class). Worth picking exact models once we know if
-you're sourcing everything from one supplier (matching connector
-types simplifies wiring).
+**Full lineup is now finalized using hardware already on hand — no
+purchases needed:**
+
+| Axis | Servo | Notes |
+|---|---|---|
+| Roll | MG996R | Load-bearing |
+| Tilt | MG996R | Load-bearing |
+| Yaw | MG996R (3rd unit) | Doesn't bear weight against gravity, but overcomes friction/inertia of the whole stack above it — using the spare MG996R here instead of buying a smaller dedicated yaw servo |
+| Jaw | Blue micro servo (SG90-class, already owned, several on hand) | Light lever, short throw — well within a micro servo's range |
+
+Micro servo (SG90-class) reference dimensions, for the internal jaw
+mounting bracket:
+
+| Measurement | Value |
+|---|---|
+| Body size (W × H × D) | ~23 mm × 29 mm × 12.2 mm |
+| Mounting tab span | ~32.5 mm |
+| Output spline | 21T (micro servo spline, smaller than standard) |
+| Weight | ~9 g |
+| Torque | ~1.6-2.5 kg-cm depending on exact model/voltage |
 
 ## Open questions
 
