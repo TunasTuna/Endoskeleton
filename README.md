@@ -35,19 +35,6 @@ firmware/           Microcontroller code
 electronics/        Wiring diagrams, BOM, servo/actuator specs
 ```
 
-## Progress
-
-- [x] Settle on an overall style direction
-- [x] Define neck degrees of freedom and servo layout
-- [x] First concept sketch — joint layout and skull silhouette
-- [x] Revise silhouette after reviewing animatronic reference designs
-- [ ] Lock final proportions and dimensions
-- [ ] Finalize finish/material
-- [ ] CAD — skull shell
-- [ ] CAD — neck articulation
-- [ ] Pick actual servo models and check torque requirements
-- [ ] Wiring and control electronics
-- [ ] Firmware for basic pose control
 
 ## Build log
 
