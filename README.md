@@ -1,4 +1,4 @@
-# Endoskeleton
+# Endoskeleton (Paused)
 
 A DIY animatronic head and neck build — an original mechanical design in the boxy, exposed-endoskeleton style you'd see in a maker workshop, not a reproduction of any licensed character. This is a personal project I'm building from scratch, from concept sketches through to a working motorized head.
 
